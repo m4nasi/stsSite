@@ -111,13 +111,13 @@ h1,h2,h3,h4,h5
   color: black; }
 
 //////////////////////////////////
-	#timeline {
+#timeline {
 	  min-width: 300px;
 	  max-width: 500px;
 	  margin: auto;
 	}
 
-	p {
+	#timeline p {
 	  font-size: 1em;
 	  line-height: 1.75em;
 	  border-top: 3px solid;
@@ -131,7 +131,7 @@ h1,h2,h3,h4,h5
 	  color: $black;
 
 	  //numbers
-	  &:before {
+	  #timeline &:before {
 	    content: counter(section);
 	    position: absolute;
 	    border-radius: 50%;
@@ -146,7 +146,7 @@ h1,h2,h3,h4,h5
 	  }
 	}
 	//odd number borders
-	p:nth-child(odd) {
+#timeline	p:nth-child(odd) {
 	  border-right: 3px solid;
 	  padding-left: 0;
 
@@ -156,7 +156,7 @@ h1,h2,h3,h4,h5
 	  }
 	}
 	//even number borders
-	p:nth-child(even) {
+#timeline	p:nth-child(even) {
 	  border-left: 3px solid;
 	  padding-right: 0;
 
@@ -166,12 +166,12 @@ h1,h2,h3,h4,h5
 	  }
 	}
 	//handle first and last
-	p:first-child {
+#timeline	p:first-child {
 	  border-top: 0;
 	  border-top-right-radius:0;
 	  border-top-left-radius:0;
 	}
-	p:last-child {
+#timeline	p:last-child {
 	  border-bottom-right-radius:0;
 	  border-bottom-left-radius:0;
 	}
