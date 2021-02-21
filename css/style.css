@@ -66,7 +66,7 @@ h1,h2,h3,h4,h5
 /************Timeline**************/
 /* Timeline Container */
 #timeline{
-	background-color: #F0CF65;
+	background-color: #32908F;
 }
 
 .timeline {
@@ -263,7 +263,7 @@ h1,h2,h3,h4,h5
 /* start home */
 #home
 	{
-        background-color: #BD4F6C;
+        background-color: #A3E7FC;
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 120px;
@@ -306,7 +306,7 @@ h1,h2,h3,h4,h5
 /* start work */
 #work
     {
-        background: #D7816A;
+        background: #26C485;
     }
 #work h2
     {
@@ -348,7 +348,7 @@ h1,h2,h3,h4,h5
 /* start about */
 #about{
 	padding-bottom: 15px;
-	background-color: #DDEDAA;
+	background-color: #553A41;
 }
 
 #about h4
@@ -388,7 +388,7 @@ h1,h2,h3,h4,h5
 #speech
     {
         text-align: center;
-				background-color: #93B5C6;
+				background-color: #2F0601;
     }
 
 		.bubble {
