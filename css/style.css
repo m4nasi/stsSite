@@ -20,9 +20,9 @@ body
 #about .fp-slide,
 #about .fp-tableCell,
 
-#timetline,
-#timetline .fp-slide,
-#timetline .fp-tableCell,
+#timeline,
+#timeline .fp-slide,
+#timeline .fp-tableCell,
 
 #cards,
 #cards .fp-slide,
@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5
 /* end all section */
 
 #timelinetext{
-	color: #FFFFFF;
+	color: #32908F;
 	text-align: center;
 	padding-left: 50px;
 }
