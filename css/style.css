@@ -110,43 +110,68 @@ h1,h2,h3,h4,h5
   font-size: 0.7em;
   color: black; }
 
-.timeline1	div {
-	  width: 300px;
+
+	main {
+	  min-width: 300px;
+	  max-width: 500px;
 	  margin: auto;
 	}
 
-	.timeline1 p {
+	p {
+	  font-size: 1em;
+	  line-height: 1.75em;
+	  border-top: 3px solid;
+	  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+	  border-image-slice: 1;
+	  border-width: 3px;
+	  margin: 0;
+	  padding: 40px;
+	  counter-increment: section;
+	  position: relative;
+	  color: $black;
 
-	  border-top: 2px dashed;
-	  border-color: blue !important;
-	  margin:0; padding: 30px;
+	  //numbers
+	  &:before {
+	    content: counter(section);
+	    position: absolute;
+	    border-radius: 50%;
+	    padding: 10px;
+	    height: 1.25em;
+	    width: 1.25em;
+	    background-color: $black;
+	    text-align: center;
+	    line-height: 1.25em;
+	    color: $white;
+	    font-size: 1em;
+	  }
 	}
-
-
-
-.timeline1 	p:nth-child(even) {
-	  border-left: 2px dashed;
-	  border-top-left-radius: 30px;
-	  border-bottom-left-radius: 30px;
-	  margin-right: 30px;
-	  padding-right: 0;
-	}
-
-	.timeline1 p:nth-child(odd) {
-	  border-right: 2px dashed;
-	  border-top-right-radius: 30px;
-	  border-bottom-right-radius: 30px;
-	  margin-left: 30px;
+	//odd number borders
+	p:nth-child(odd) {
+	  border-right: 3px solid;
 	  padding-left: 0;
-	}
 
-	.timeline1 p:first-child {
+	  &:before {
+	    left: 100%;
+	    margin-left: -20px;
+	  }
+	}
+	//even number borders
+	p:nth-child(even) {
+	  border-left: 3px solid;
+	  padding-right: 0;
+
+	  &:before {
+	    right: 100%;
+	    margin-right: -20px;
+	  }
+	}
+	//handle first and last
+	p:first-child {
 	  border-top: 0;
 	  border-top-right-radius:0;
 	  border-top-left-radius:0;
 	}
-
-.timeline1	p:last-child {
+	p:last-child {
 	  border-bottom-right-radius:0;
 	  border-bottom-left-radius:0;
 	}
