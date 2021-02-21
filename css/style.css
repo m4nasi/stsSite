@@ -67,12 +67,7 @@ h1,h2,h3,h4,h5
 /* Timeline Container */
 #timeline{
 	background-color: #32908F;
-}
-
-#timeline{
-	  min-width: 300px;
-	  max-width: 500px;
-	  margin: auto;
+	margin: auto;
 	}
 
 	#timeline p {
